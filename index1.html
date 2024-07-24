@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<title>js alert</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+.alert {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8 g
+}
+</style>
+
+</head>
+<body>
+
+
+
+
+	<div  id = "test"></div>
+
+	<script>
+  let div = document.createElement('div');
+  div.className = "alert";
+  div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+
+  document.body.append(div);
+  setTimeout(() => div.remove(), 3000);
+</script>
+
+
+</body>
+</html>
+
+
