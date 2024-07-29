@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<title>js alert</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<style>
+.alert {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8 g
+}
+</style>
+
+</head>
+<body>
+
+    <script>
+        let tactValue = 'e_blast'
+        let score = 'Email'
+        let score2 = "make_good"
+        let score3 = "reminder"
+
+    if(tactValue == 'e_blast'){
+    
+  
+        if(score == 'Email' && score2 !== "make_good" && score3 !== "reminder" ){
+            console.log("inEmail")
+      
+        }else if(score2 == "make_goo" && score3 !== "reminder" && score !== "Email"){
+            console.log("inMakeGood")
+  
+        }else if (score3 == "reminder" && score2 == "make_good" && score == "Email"){
+            console.log("inReminder")
+      
+            //   }else if(score2 == "mg_make_good"){console.log("inReminder")
+      
+        }else{
+             console.log("fount in none!")
+        }
+
+    } else {
+        console.log("bast not found in any conditon");
+    }
+</script>
+</body>
+</html>
