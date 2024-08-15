@@ -1,0 +1,34 @@
+===>contentType <===
+Definition: The contentType option in an AJAX request specifies the type of data being sent to the server. It tells the server how to interpret the data in the request body.
+Usage: This is used to set the MIME type of the request payload.
+Example: If you're sending JSON data to the server, you would set contentType to 'application/json'.
+Default: The default value is 'application/x-www-form-urlencoded; charset=UTF-8', which is typically used for form data
+
+$.ajax({
+    url: '/api/endpoint',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify({ key: 'value' }),
+    success: function(response) {
+        console.log('Success:', response);
+    }
+});
+
+
+==> Data type ===>
+
+dataType
+Definition: The dataType option specifies the type of data that you expect back from the server. It tells jQuery how to interpret the response data.
+Usage: This is used to handle the format of the response data that the server will return.
+Example: If you expect the server to return JSON data, you would set dataType to 'json'.
+Default: The default value is 'text', meaning jQuery will interpret the response as plain text.
+
+
+$.ajax({
+    url: '/api/endpoint',
+    type: 'GET',
+    dataType: 'json',
+    success: function(response) {
+        console.log('Response:', response);
+    }
+});
